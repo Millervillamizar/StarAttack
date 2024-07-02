@@ -2,6 +2,13 @@ var config = {
     type: Phaser.AUTO,
     width: 1280,
     height: 720,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        parent: 'phaser-example',
+        width: 1280,
+        height: 720
+    },
     physics: {
         default: 'arcade',
         arcade: {
@@ -54,8 +61,6 @@ function preload() {
 function create() {
     punto = 0;
     this.add.image(640, 360, 'fondo');
-
-    
 
     var jungle = this.sound.add('tone');
     jungle.play({
