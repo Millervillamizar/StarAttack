@@ -7,10 +7,32 @@
    <script src="//cdn.jsdelivr.net/npm/phaser@3.54.0/dist/phaser.js"></script>
    <link rel="stylesheet" href="style.css"> 
    <title>Star-Attack</title>
+   <style>
+       body {
+           margin: 0;
+           padding: 0;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           background: src url("img/Landscape.jpg");
+       }
+       #phaser-example {
+           width: 80%;
+           height: 80%;
+           overflow: hidden;
+       }
+       canvas {
+           width: 100% !important;
+           height: 100% !important;
+       }
+   </style>
 </head>
 <body>
-   <script src="Principal.js"></script>
+   <div id="phaser-example"></div>
+   <script src="principal.js"></script>
 </body>
 </html>
+
 
 

@@ -1,14 +1,14 @@
-
 var config = {
     type: Phaser.AUTO,
     width: 1280,
     height: 720,
-    scale: {
-        mode: Phaser.Scale.FIT,
-        autoCenter: Phaser.Scale.CENTER_BOTH,
-        parent: 'phaser-example',
-        width: 1280,
-        height: 720
+    parent: 'phaser-example',
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 10 },
+            debug: false
+        }
     },
     physics: {
         default: 'arcade',
@@ -206,3 +206,4 @@ function contacto2() {
     restartButton.setPosition(650, 450);
     restartButton.setVisible(true);
 }
+
